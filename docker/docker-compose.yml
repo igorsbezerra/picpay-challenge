@@ -1,0 +1,11 @@
+services:
+  mysql:
+    container_name: mysql
+    image: mysql
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=123
+      - MYSQL_DATABASE=picpaydb
+      - MYSQL_ROOT_PASSWORD=123
